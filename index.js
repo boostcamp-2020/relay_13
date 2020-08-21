@@ -65,8 +65,6 @@ app.get('/posts', async (req, res) => {
 //   "ascii" : null
 // },
 
-sequelize.sync().then(() => {});
-
 app.listen(app.get('port'), () => {
   console.log(`만리안 app listening at http://localhost:${app.get('port')}`);
 });
